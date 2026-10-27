@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071f33">
+  <meta name="description" content="AERON — an autonomous floating water monitoring and surface waste collection concept.">
+  <title>AERON | Aquatic Ecosystem Restoration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="AERON home">
+      <span class="brand-mark">A</span><span>AERON<span class="brand-dot">.</span><small>AQUATIC ECOSYSTEM RESTORATION</small></span>
+    </a>
+    <nav id="nav">
+      <a href="#overview">Overview</a><a href="#how">How it works</a><a href="#dashboard">Dashboard</a><a href="#impact">Impact</a>
+    </nav>
+    <a class="top-cta" href="#dashboard">View live demo <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> SMART WATER. HEALTHIER ECOSYSTEMS.</div>
+        <h1>Cleaner water.<br><em>Smarter action.</em></h1>
+        <p class="hero-lede">Meet AERON — a floating robotic concept that brings surface-waste collection, water-quality monitoring, and data-driven alerts together in one platform.</p>
+        <div class="hero-actions"><a class="button primary" href="#how">Explore the system <span>→</span></a><a class="button secondary" href="#dashboard">See dashboard demo</a></div>
+        <div class="hero-stats">
+          <div><strong>04</strong><span>Core water readings</span></div>
+          <div><strong>24/7*</strong><span>Remote visibility goal</span></div>
+          <div><strong>01</strong><span>Integrated platform</span></div>
+        </div>
+        <p class="fine-print">*Continuous monitoring depends on battery, connectivity, and deployment setup. This site uses illustrative demo data.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-label"><span class="live-dot"></span> CONCEPT SYSTEM / AERON-01</div>
+        <div class="water-scene">
+          <div class="sun-glow"></div><div class="water-line"></div>
+          <div class="ripple ripple-a"></div><div class="ripple ripple-b"></div><div class="ripple ripple-c"></div>
+          <div class="drone">
+            <div class="drone-top"></div><div class="drone-body"><div class="lens"></div><div class="status-light"></div></div>
+            <div class="drone-side left"></div><div class="drone-side right"></div>
+            <div class="scoop-frame"><div class="mesh"></div></div>
+            <div class="float float-left"></div><div class="float float-right"></div>
+          </div>
+          <div class="float-tag tag-one"><span class="tag-icon">⌁</span><span><b>Surface collection</b><small>Mesh scoop unit</small></span></div>
+          <div class="float-tag tag-two"><span class="tag-icon">◉</span><span><b>Water sensing</b><small>Live parameter readings</small></span></div>
+          <div class="scene-caption">ILLUSTRATIVE CONCEPT — NOT A MANUFACTURED PRODUCT</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>DESIGNED AROUND</span><b>MONITOR</b><i>·</i><b>COLLECT</b><i>·</i><b>ANALYZE</b><i>·</i><b>ALERT</b>
+      <span class="sdg-tag">SDG 6 · CLEAN WATER & SANITATION</span>
+    </section>
+
+    <section class="section intro" id="overview">
+      <div class="section-heading"><div class="eyebrow">01 / THE IDEA</div><h2>One floating system.<br><em>Three connected jobs.</em></h2></div>
+      <p class="section-summary">Water bodies can collect floating debris while their quality changes out of sight. AERON is designed to help teams observe conditions, remove visible surface waste, and make timely decisions using sensor data.</p>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">↗</div><span class="card-number">01</span><h3>Detect & collect</h3><p>A camera-based detection concept identifies visible floating debris. A front scoop mesh catches waste while allowing water to drain back.</p><div class="card-foot">SURFACE WASTE</div></article>
+        <article class="feature-card"><div class="feature-icon">⌁</div><span class="card-number">02</span><h3>Measure water</h3><p>Sensors monitor pH, turbidity, temperature, and dissolved oxygen to provide a clearer picture of changing water conditions.</p><div class="card-foot">SENSOR MONITORING</div></article>
+        <article class="feature-card"><div class="feature-icon">⌘</div><span class="card-number">03</span><h3>Respond & report</h3><p>When configured thresholds are crossed, AERON can raise an alert and trigger aeration logic. Readings are shown on a cloud-connected dashboard.</p><div class="card-foot">DATA-DRIVEN ACTION</div></article>
+      </div>
+    </section>
+
+    <section class="section process" id="how">
+      <div class="section-heading"><div class="eyebrow">02 / SYSTEM WORKFLOW</div><h2>From water surface<br><em>to useful insight.</em></h2></div>
+      <div class="workflow">
+        <div class="workflow-line"></div>
+        <article class="step"><div class="step-no">01</div><div><h3>Scan the surface</h3><p>A camera captures surface images. An AI model, once trained and integrated, can classify visible objects such as bottles, wrappers, leaves, and foam.</p></div><span class="step-label">VISION</span></article>
+        <article class="step"><div class="step-no">02</div><div><h3>Collect floating debris</h3><p>The front scoop mesh collects and temporarily holds surface waste. It does not remove dissolved pollutants, and oil removal needs a separate specialized system.</p></div><span class="step-label">COLLECTION</span></article>
+        <article class="step"><div class="step-no">03</div><div><h3>Monitor water quality</h3><p>pH, turbidity, temperature, and dissolved-oxygen sensors send readings to the ESP32 controller for threshold checks and logging.</p></div><span class="step-label">SENSING</span></article>
+        <article class="step"><div class="step-no">04</div><div><h3>Trigger an appropriate response</h3><p>If dissolved oxygen falls below a configured threshold, the controller can switch on the aeration unit. Aeration supports oxygen transfer; it does not remove every type of pollution.</p></div><span class="step-label">AERATION</span></article>
+        <article class="step"><div class="step-no">05</div><div><h3>Send data to the dashboard</h3><p>The ESP32 transmits readings over Wi-Fi to a connected cloud service. The dashboard presents current readings, alerts, collection logs, and system status.</p></div><span class="step-label">CLOUD</span></article>
+      </div>
+      <div class="note-card"><span class="note-symbol">i</span><p><b>Prototype honesty matters.</b> Predicting pollution 48–72 hours ahead requires enough historical, location-specific data and a validated forecasting model. Treat this as a development goal until it has been tested.</p></div>
+    </section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="section-heading"><div class="eyebrow">03 / INTERACTIVE DEMO</div><h2>The water story,<br><em>at a glance.</em></h2></div>
+      <div class="dashboard-shell">
+        <aside class="dash-sidebar"><div class="dash-logo"><span class="brand-mark mini">A</span><span>AERON<small>FIELD CONSOLE</small></span></div><div class="dash-nav active">◫ &nbsp; Overview</div><div class="dash-nav">⌁ &nbsp; Water quality</div><div class="dash-nav">♧ &nbsp; Collection log</div><div class="dash-nav">⚙ &nbsp; Device status</div><div class="dash-device"><span class="live-dot"></span><div><b>AERON-01</b><small>Demo device connected</small></div></div></aside>
+        <div class="dash-main">
+          <div class="dash-top"><div><span class="dash-kicker">FIELD OVERVIEW / DEMO DATA</span><h3>Water health overview</h3><p>Illustrative readings for interface preview</p></div><button id="refreshDemo" class="refresh-btn">↻ Refresh demo</button></div>
+          <div class="health-row"><div class="health-card"><div class="health-ring"><div><strong id="healthScore">78</strong><small>/100</small></div></div><div><span class="muted-label">WATER HEALTH INDEX</span><h4 id="healthLabel">Moderate</h4><p>Combined indicator for demonstration</p></div></div><div class="risk-card"><div><span class="muted-label">AQUATIC LIFE RISK</span><h3 id="riskLabel">Moderate watch</h3><p>Environmental indicators only — not a biological guarantee.</p></div><div class="risk-badge" id="riskBadge">!</div></div></div>
+          <div class="sensor-grid">
+            <div class="sensor-card"><div class="sensor-top"><span>pH LEVEL</span><span class="sensor-symbol">◉</span></div><strong id="phValue">7.2</strong><small>Typical reference: context-dependent</small><div class="mini-bar"><span style="width:72%"></span></div></div>
+            <div class="sensor-card"><div class="sensor-top"><span>TURBIDITY</span><span class="sensor-symbol">≋</span></div><strong><span id="turbidityValue">18</span> <small>NTU</small></strong><small>Lower often means clearer water</small><div class="mini-bar"><span id="turbidityBar" style="width:35%"></span></div></div>
+            <div class="sensor-card"><div class="sensor-top"><span>TEMPERATURE</span><span class="sensor-symbol">♨</span></div><strong><span id="tempValue">27.4</span> <small>°C</small></strong><small>Changes affect dissolved oxygen</small><div class="mini-bar"><span id="tempBar" style="width:58%"></span></div></div>
+            <div class="sensor-card"><div class="sensor-top"><span>DISSOLVED OXYGEN</span><span class="sensor-symbol">O₂</span></div><strong><span id="doValue">5.8</span> <small>mg/L</small></strong><small>Low oxygen can stress aquatic life</small><div class="mini-bar"><span id="doBar" style="width:72%"></span></div></div>
+          </div>
+          <div class="dash-bottom-grid"><div class="panel"><div class="panel-heading"><div><span class="muted-label">COLLECTION LOG</span><h4>Waste collected today</h4></div><span class="demo-pill">DEMO</span></div><div class="waste-total"><strong id="wasteTotal">1.25</strong><span>kg / illustrative total</span></div><div class="waste-item"><span class="waste-dot plastic"></span><span>Plastic & wrappers</span><b id="plasticCount">0.70 kg</b></div><div class="waste-item"><span class="waste-dot leaves"></span><span>Leaves & organic debris</span><b id="leafCount">0.40 kg</b></div><div class="waste-item"><span class="waste-dot other"></span><span>Other floating debris</span><b id="otherCount">0.15 kg</b></div><p class="small-note">Weight values must come from a load sensor or manual weighing. Camera-only weight is an estimate.</p></div>
+            <div class="panel"><div class="panel-heading"><div><span class="muted-label">SYSTEM STATUS</span><h4>Device health</h4></div><span class="status-pill">● Demo online</span></div><div class="status-row"><span>ESP32 connection</span><b class="good">Connected (demo)</b></div><div class="status-row"><span>Water sensors</span><b class="good">Readings simulated</b></div><div class="status-row"><span>Collection unit</span><b class="good">Ready (demo)</b></div><div class="status-row"><span>Aeration trigger</span><b id="aerationStatus">Standby</b></div><div class="alert-box" id="alertBox"><span>✓</span><div><b>No critical demo alert</b><p>Replace sample data with validated sensor readings during implementation.</p></div></div></div></div>
+          <div class="dash-footnote">This is a front-end demonstration. It does not connect to physical sensors or a cloud service until you configure and integrate a backend.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact" id="impact">
+      <div class="impact-copy"><div class="eyebrow">04 / INTENDED IMPACT</div><h2>Better visibility.<br><em>Better decisions.</em></h2><p>AERON aims to support local water-body management by combining practical surface cleanup with continuous environmental observations.</p><a class="text-link" href="#home">Back to top ↑</a></div>
+      <div class="impact-list"><div><span>01</span><section><h3>Cleaner surface</h3><p>Capture visible floating debris for proper disposal.</p></section></div><div><span>02</span><section><h3>Earlier awareness</h3><p>Highlight changes in monitored water parameters.</p></section></div><div><span>03</span><section><h3>Remote oversight</h3><p>Make readings and device status easier to review from a phone or computer.</p></section></div><div><span>04</span><section><h3>SDG alignment</h3><p>Primarily supports SDG 6: Clean Water and Sanitation, with links to SDG 14: Life Below Water.</p></section></div></div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">A</span><span>AERON<small>AQUATIC ECOSYSTEM RESTORATION</small></span></a><p>Student project concept · Prototype dashboard demo</p><span>© 2026 AERON</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
